@@ -1,0 +1,335 @@
+{
+    "common": {
+        "name":                     "roomba-rw",
+        "version":                  "0.0.1",
+        "title":                    "Roomba Roowifi Adapter",
+        "desc":                     {
+            "en": "Monitor/control Roomba via RooWifi",
+            "de": "Bedienen/Beobachten von Roomba per RooWifi"
+        },
+        "platform":                 "Javascript/Node.js",
+        "mode":                     "daemon",
+        "icon":                     "roomba-rw.png",
+        "extIcon":                  "",
+        "loglevel":                 "info",
+        "nondeletable":             true,
+        "keywords":                 ["roomba", "roowifi", "wifi", "wlan"],
+        "type":                     "hardware"
+    },
+    "native": {
+        "ip": "192.168.2.250",
+        "port": "9001",
+        "cycle": "500",
+        "user": "name",
+        "pass": "pass"
+    },
+    "objects": [
+
+    ],
+    "instanceObjects":[
+        {
+            "_id":  "Inputs",
+            "type": "channel",
+            "common": {
+                "role": "Inputs",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id":  "Outputs",
+            "type": "channel",
+            "common": {
+                "role": "Inputs",
+                "name": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Clean",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Spot",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Dock",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.SciCmd",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Power",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.FW",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.BW",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.Stop",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.RCW",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.RCCW",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.DriveSpeed",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.RotateSpeed",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.MainBrush",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.SideBrush",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.Drive.Vacuum",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Inputs.ExportSensorData",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Outputs.SciCmdTargetReached",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        } ,
+        {
+            "_id": "Outputs.SVoltage",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Outputs.STemperature",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Outputs.SCurrent",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Outputs.SCharge",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        },
+        {
+            "_id": "Outputs.SCapacity",
+            "type": "state",
+            "common": {
+                "name": "",
+                "type": "string",
+                "role": "",
+                "read": true,
+                "write": true,
+                "desc": ""
+            },
+            "native": {}
+        }
+        ]
+}
