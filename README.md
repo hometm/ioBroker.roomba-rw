@@ -1,6 +1,9 @@
-#Roomba-rw (Roomba RooWifi) Adapter for ioBroker
+# Roomba-rw (Roomba RooWifi) Adapter for ioBroker
 
-##Description:
+## General note:
+Roomba-rw works only with "RooWifi" module- it will not work with Roomba integrated Wifi models. Due to physical issues and very limited usage of this adapter, there are no updates planned
+
+## Description:
 ioBroker Adapter for monitoring/operation of Roomba cleaners over RooWifi. This adapter uses just the Roomba SCI 
 interface. The RooWifi interface (http interface) can be used by an other application, vis or javascript.
 
@@ -35,7 +38,7 @@ Up to now, the following functionality is supported:
       * Motor overcurrent  
 
 
-###SCI Commands:  
+### SCI Commands:  
 Input SciCmd is used for execution of any SCI command. The following topics has to be noted:  
 
 * Just one command at a time  
@@ -54,7 +57,7 @@ The status reading over SCI and required calculation is based on multiple sensor
 Due to many cyclically calculations, the mathematical reproduction of the past physical movement can lead to an 
 arithmetical error. The faster the drive/rotation speed, the bigger the arithmetical error!  
 
-###Configuration:  
+### Configuration:  
 The following configuration parameter are required inside ioBroker adapter configuration:  
 
 * RooWifi IP address (e.g. 192.168.2.20)  
@@ -65,18 +68,18 @@ A lower cycle leads to a blur of the sensor values and a resulting delayed stopp
 * Username/password for Roomba  
 
 
-##Prerequirements:
+## Prerequirements:
 - [ioBroker](http://www.ioBroker.net "ioBroker homepage")
 
 
 
-##Change log:
+## Change log:
 
 
-###0.0.1 (2015-09-22)
+###0 .0.1 (2015-09-22)
 * Initial version
 
-##LOP:  
+## LOP:  
 * Init device  
 * Re-init device (after device went to sleep)  
 * Power on/off  
